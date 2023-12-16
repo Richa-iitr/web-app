@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 nickel = "*"
 chrono="0.2"
+clap="4.4.11"
 [dependencies.async-std]
 version = "1.6"
 features = ["attributes"]
