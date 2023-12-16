@@ -15,10 +15,10 @@ fn get_dateTime(filename:&'static str) -> io::Result<()> {
     f.write_all(time);
     Ok(())
 }
-fn log_dateTime(filename:&'static str)  {
+fn log_dateTime(filename:&'static str) -> String {
     match get_dateTime(filename) {
-        Ok(..) => println!("Created and logged"),
-        Err(..) => println!("Error encountered")
+        Ok(..) => format!("Created and logged"),
+        Err(..) => format!("Error encountered")
     }
 }
 
